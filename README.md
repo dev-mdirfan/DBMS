@@ -11,21 +11,29 @@
 # DML
 The SQL command that deals with manipulation with ata present in the database belongs to DML or data and includes most of the SQL 
 
-- List of SQL Commands
-    - select 
-        - It is used to retrieve the data from database
+## List of SQL Commands
+- ### select 
+    - It is used to retrieve the data from database
+    - Syntax
+        - select column1, column2, column3 from table where condition
+    - Syntax for all columns
+        - SELECT * FROM TABLE;
+        - SELECT * FROM TABLE WHERE MARKS>50;
+- ### insert 
+    - It is used to insert data into a table.
+    - first method is specify only the value of data to be inserted without the columns names
         - Syntax
-            - select column1, column2, column3 from table where condition
-        - Syntax for all columns
-    - insert 
-        - It is used to insert data into a table
-    - update 
-        - It is used to update the data from existing table
-    - delete
-        - It is used to delete records from database table
+            - INSERT INTO table_name VALUES(value1, value2, value3, ...)
+    - Columns name and VALUES
+        - In the which we want to fill and their corresponding values as shown below -
+            - INSERT INTO TABLE_NAME(COL1, COL2, COL3, ...) VALUES (VAL, VAL2, VAL3, ...)
+- ### update 
+    - It is used to update the data from existing table
+- ### delete
+    - It is used to delete records from database table
 
 ### Q1. You have a table student (NAME, ROLLNO, FATHERNAME, ADD, MARKS)
-- Display the details of student whose name Alok
+- Display the details of student whose name **Alok**
 - Display the name and Roll.No of the student whose name is Amit and father's name Ragav
 - Display the name and Roll.No of the student whose marks > 50
 - display the name and address of the student whose  no. is 10203005060
@@ -38,3 +46,7 @@ SELECT NAME, ROLLNO FROM STUDENT WHERE MARKS>50;
 SELECT NAME, ADD FROM STUDENT WHERE ROLLNO=10203005060;
 SELECT NAME, FATHERNAME, ROLLNO FROM WHERE MARKS>50 AND NAME=AMIT;
 </pre>
+
+
+
+
