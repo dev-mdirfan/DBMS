@@ -107,3 +107,17 @@ SELECT * FROM STUDENT WHERE NAME='Q%';
 ### 
 - Where we can use NULL values 
 in the same way we can also use not NULL in the where clause
+
+- display the name and roll.No. of the student whose name start with latter 'A' and their marks are not being in the database.
+
+```sql
+SELECT * FROM STUDENT WHERE MARKS IS NULL;
+SELECT * FROM STUDENT WHERE NAME='%A';
+```
+
+- The light keywords select rows containing fields specified portions of characteristics like we use CHAR, VARCHAR, Text an small varchar data. A light VARCHAR allow user to match certain keywords
+- An string of 0 or more characters.
+
+- An single character ''
+
+
